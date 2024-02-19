@@ -18,7 +18,7 @@ const index = () => {
   const [activeComponent, setActiveComponent] = useState("Home");
   const [membershipType, SetMembershipType] = useState("Premium");
   const [authBackEndID, setAuthBackEndID] = useState("");
-  const [network, setNetworks] = useState({});
+  const [networks, setNetworks] = useState({});
   const [networkName, setNetworkName] = useState();
 
 
