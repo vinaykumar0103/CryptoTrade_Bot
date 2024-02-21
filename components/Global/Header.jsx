@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 const Header = ({ networkName, setActiveComponent }) => {
   const [userDetails, setUserDetails] = useState({});
   const [userMembership, setUserMembership] = useState();
+  // const [isSearchVisible, setIsSearchVisible] = useState(false);
   
   useEffect(()=> {
     const user = JSON.parse(localStorage.getItem('userProfile'));
@@ -11,7 +12,12 @@ const Header = ({ networkName, setActiveComponent }) => {
     setUserMembership(userMembership);
     setUserDetails(user);
 
-  })
+  }, []);
+
+  // //Toogle search visiblity
+  // const toggleSearchVisibility = () => {
+  //   setIsSearchVisible(!isSearchVisible)
+  // };
 
   return (
     <div className='techwave_fn_header'>
@@ -42,14 +48,15 @@ const Header = ({ networkName, setActiveComponent }) => {
       <div className='header__right'>
         <div className='fn__nav_bar'>
           <div className='bar__item bar__item_search'>
-            <div className='item_opener' title='Search'>
-            <img src='img/lighticon/light-5.png' className='fn__svg' alt=''/>
+           <div className='item_opener' title='Search'>
+            {/* onClick={toggleSearchVisibility}>  */}
+             <img src='img/lighticon/light-5.png' className='fn__svg' alt=''/>
             </div>
-
             <div className='item_popup' data-position='right'>
               <input type='text' placeholder='search' />
               </div>
-            </div>
+                </div>
+            
 
             <div className='bar__item bar__item_user'>
               <a
@@ -57,10 +64,9 @@ const Header = ({ networkName, setActiveComponent }) => {
               className='user_opener fn__tooltip'>
                 <img src={userDetails?.image || "img/crypto.png"} alt=''/>
               </a>
-      </div> 
-  
-
-          </div>
+             </div> 
+             </div>
+         
         </div>
     </div>
   );

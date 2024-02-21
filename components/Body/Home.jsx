@@ -8,7 +8,7 @@ const Home = () => {
         <div className='techwave_fn_home'>
           <div className='section_home'>
             <div className='section_left'>
-              <div className='techwave_fn_little_holder'>
+          <div className='techwave_fn_little_holder'>
                 <h1 className='title'>Automate Your Crypto Trading</h1>
              
               <p className='desc'>
@@ -57,21 +57,21 @@ const Home = () => {
               </div>
        
 
-        <div className='section_right'>
-          <div className='company_info'>
+            <div className='section_right'>
+           <div className='company_info'>
             <img src='img/light-logo.png' alt='' />
             <p className='fn__animated_text'>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam laudantium ad dignissimos, quasi labore, laboriosam sapiente minus, nostrum temporibus repellat doloribus vitae omnis facilis sed tenetur debitis fugit id officia.
             </p>
             <hr />
-            <div className='fn__member'>
+            <div className='fn__members'>
               <div className='active item'>
                 <span className='circle'></span>
                 <span className='text'>1111111 Online</span>
               </div>
-              <div className='item'>
+              <div className='active item'>
                 <span className='circle'></span>
-                <span className='text'>2345678 Members</span>
+                <span className='text'>23645833 Members</span>
               </div>
             </div>
           </div>
