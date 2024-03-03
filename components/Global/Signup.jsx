@@ -128,3 +128,4 @@ const Signup = ({ axios, setActiveComponent, notifyError, notifySuccess }) => {
 }
 
 export default Signup
+
